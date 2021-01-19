@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="TextFly" customModuleProvider="target">
+            <connections>
+                <outlet property="footerView" destination="dR1-5w-uIj" id="kxj-gq-27P"/>
+                <outlet property="loginButton" destination="fq0-97-kO3" id="Etr-lm-SEb"/>
+                <outlet property="loginButtonView" destination="dR1-5w-uIj" id="96Z-z4-GAs"/>
+                <outlet property="tableView" destination="AAR-V3-ZN2" id="llI-DR-CKm"/>
+                <outlet property="tableViewHeight" destination="tEZ-RK-cRL" id="ska-Nb-w3T"/>
+                <outlet property="view" destination="iN0-l3-epB" id="eES-3B-qYf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TextFly" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YK2-tC-mlz">
+                    <rect key="frame" x="20" y="76" width="374" height="185"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="185" id="KnR-hj-xEE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="100"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bem vindo ao" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lt2-DQ-DZY">
+                    <rect key="frame" x="20" y="44" width="374" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="49j-ge-4TW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="23"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" bouncesZoom="NO" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AAR-V3-ZN2">
+                    <rect key="frame" x="20" y="269" width="374" height="399"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="399" id="tEZ-RK-cRL"/>
+                    </constraints>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dR1-5w-uIj">
+                    <rect key="frame" x="0.0" y="718" width="414" height="144"/>
+                    <subviews>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fq0-97-kO3">
+                            <rect key="frame" x="16" y="16" width="382" height="48"/>
+                            <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="LO0-Dr-GAr"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="17"/>
+                            <state key="normal" title="Fazer Login">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iif-8F-mUw">
+                            <rect key="frame" x="16" y="80" width="382" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="xWI-rg-Xda"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="16"/>
+                            <state key="normal" title="Não possui conta? Cadastre aqui">
+                                <color key="titleColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="openRegister:" destination="-1" eventType="touchUpInside" id="Seu-z1-kd1"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="iif-8F-mUw" firstAttribute="leading" secondItem="dR1-5w-uIj" secondAttribute="leading" constant="16" id="fAD-fN-JaL"/>
+                        <constraint firstAttribute="trailing" secondItem="fq0-97-kO3" secondAttribute="trailing" constant="16" id="ghg-K4-hWs"/>
+                        <constraint firstAttribute="height" constant="144" id="kud-EB-Tmj"/>
+                        <constraint firstAttribute="bottom" secondItem="iif-8F-mUw" secondAttribute="bottom" constant="16" id="ms0-bu-VFG"/>
+                        <constraint firstItem="iif-8F-mUw" firstAttribute="top" secondItem="fq0-97-kO3" secondAttribute="bottom" constant="16" id="qFY-A4-GXA"/>
+                        <constraint firstItem="fq0-97-kO3" firstAttribute="top" secondItem="dR1-5w-uIj" secondAttribute="top" constant="16" id="sQ1-0M-YnD"/>
+                        <constraint firstItem="fq0-97-kO3" firstAttribute="leading" secondItem="dR1-5w-uIj" secondAttribute="leading" constant="16" id="tYK-6Z-wQ0"/>
+                        <constraint firstAttribute="trailing" secondItem="iif-8F-mUw" secondAttribute="trailing" constant="16" id="yNi-12-9hW"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="AAR-V3-ZN2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="9ZR-ob-Mz4"/>
+                <constraint firstItem="dR1-5w-uIj" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="L14-eE-Ga9"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="YK2-tC-mlz" secondAttribute="trailing" constant="20" id="M0D-EW-5pV"/>
+                <constraint firstItem="dR1-5w-uIj" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Mn3-5g-0zN"/>
+                <constraint firstItem="Lt2-DQ-DZY" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Q2M-YO-c8l"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Lt2-DQ-DZY" secondAttribute="trailing" constant="20" id="QMa-Ih-EZt"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="AAR-V3-ZN2" secondAttribute="trailing" constant="20" id="Vip-Vi-jDy"/>
+                <constraint firstItem="YK2-tC-mlz" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="eOQ-6A-xWy"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="dR1-5w-uIj" secondAttribute="trailing" id="g8O-fH-nFL"/>
+                <constraint firstItem="dR1-5w-uIj" firstAttribute="top" relation="greaterThanOrEqual" secondItem="AAR-V3-ZN2" secondAttribute="bottom" constant="8" symbolic="YES" id="hSc-cb-Qd0"/>
+                <constraint firstItem="Lt2-DQ-DZY" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="hfw-5u-7QQ"/>
+                <constraint firstItem="YK2-tC-mlz" firstAttribute="top" secondItem="Lt2-DQ-DZY" secondAttribute="bottom" id="rH1-dS-VQs"/>
+                <constraint firstItem="AAR-V3-ZN2" firstAttribute="top" secondItem="YK2-tC-mlz" secondAttribute="bottom" constant="8" symbolic="YES" id="vzX-le-x3a"/>
+            </constraints>
+            <point key="canvasLocation" x="63.768115942028992" y="84.375"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
