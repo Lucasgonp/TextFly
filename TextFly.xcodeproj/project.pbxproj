@@ -27,6 +27,16 @@
 		7678734925B63FEE002FD382 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7678734825B63FEE002FD382 /* UIColor+Extension.swift */; };
 		7678735625B66229002FD382 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7678735525B66229002FD382 /* RegisterViewController.swift */; };
 		7678735E25B66236002FD382 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7678735D25B66236002FD382 /* RegisterViewController.xib */; };
+		768FFEFD25B79F9A00B63875 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768FFEFC25B79F9A00B63875 /* UITableView+Extension.swift */; };
+		768FFF0525B7A09A00B63875 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768FFF0425B7A09A00B63875 /* RegisterViewModel.swift */; };
+		768FFF0E25B7A12800B63875 /* EmptyEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768FFF0D25B7A12800B63875 /* EmptyEntity.swift */; };
+		768FFF1725B7A1D500B63875 /* UserDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768FFF1625B7A1D500B63875 /* UserDataProvider.swift */; };
+		768FFF1D25B7A2B300B63875 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768FFF1C25B7A2B300B63875 /* APIClient.swift */; };
+		768FFF4325B7AABE00B63875 /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768FFF4225B7AABE00B63875 /* DateFormatter+Extension.swift */; };
+		768FFF4925B7AB7000B63875 /* UserRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768FFF4825B7AB7000B63875 /* UserRoute.swift */; };
+		768FFF4F25B7AE4800B63875 /* ErrorTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768FFF4E25B7AE4800B63875 /* ErrorTracker.swift */; };
+		768FFF5425B7AE8F00B63875 /* ObservableType+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768FFF5325B7AE8F00B63875 /* ObservableType+Extension.swift */; };
+		768FFF5925B7AEC900B63875 /* ActivityTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768FFF5825B7AEC900B63875 /* ActivityTracker.swift */; };
 		76E7086525B67429003F6F21 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E7086425B67429003F6F21 /* LoginViewController.swift */; };
 		B0E7DCA969BB6BF01876DF12 /* Pods_TextFlyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F2A5F9B685DB894E772037B /* Pods_TextFlyTests.framework */; };
 /* End PBXBuildFile section */
@@ -77,6 +87,16 @@
 		7678734825B63FEE002FD382 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		7678735525B66229002FD382 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		7678735D25B66236002FD382 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		768FFEFC25B79F9A00B63875 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		768FFF0425B7A09A00B63875 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		768FFF0D25B7A12800B63875 /* EmptyEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyEntity.swift; sourceTree = "<group>"; };
+		768FFF1625B7A1D500B63875 /* UserDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataProvider.swift; sourceTree = "<group>"; };
+		768FFF1C25B7A2B300B63875 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		768FFF4225B7AABE00B63875 /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extension.swift"; sourceTree = "<group>"; };
+		768FFF4825B7AB7000B63875 /* UserRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRoute.swift; sourceTree = "<group>"; };
+		768FFF4E25B7AE4800B63875 /* ErrorTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorTracker.swift; sourceTree = "<group>"; };
+		768FFF5325B7AE8F00B63875 /* ObservableType+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservableType+Extension.swift"; sourceTree = "<group>"; };
+		768FFF5825B7AEC900B63875 /* ActivityTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTracker.swift; sourceTree = "<group>"; };
 		76E7086425B67429003F6F21 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8F2A5F9B685DB894E772037B /* Pods_TextFlyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextFlyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A49D6D7238D98E79AF3E90D5 /* Pods-TextFly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextFly.release.xcconfig"; path = "Target Support Files/Pods-TextFly/Pods-TextFly.release.xcconfig"; sourceTree = "<group>"; };
@@ -161,6 +181,10 @@
 		7613C9EC25B62356004017DC /* TextFly */ = {
 			isa = PBXGroup;
 			children = (
+				768FFF4D25B7AE3600B63875 /* Utilities */,
+				768FFF1B25B7A2A300B63875 /* Networking */,
+				768FFF1525B7A1A900B63875 /* DataProvider */,
+				768FFF0C25B7A11700B63875 /* Model */,
 				7678735325B661E7002FD382 /* Font */,
 				7678734625B63FB7002FD382 /* Controller */,
 				7678733D25B63F70002FD382 /* Color */,
@@ -253,6 +277,9 @@
 			isa = PBXGroup;
 			children = (
 				7678734825B63FEE002FD382 /* UIColor+Extension.swift */,
+				768FFEFC25B79F9A00B63875 /* UITableView+Extension.swift */,
+				768FFF4225B7AABE00B63875 /* DateFormatter+Extension.swift */,
+				768FFF5325B7AE8F00B63875 /* ObservableType+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -267,10 +294,53 @@
 		7678735425B6621B002FD382 /* Register */ = {
 			isa = PBXGroup;
 			children = (
+				768FFF0425B7A09A00B63875 /* RegisterViewModel.swift */,
 				7678735525B66229002FD382 /* RegisterViewController.swift */,
 				7678735D25B66236002FD382 /* RegisterViewController.xib */,
 			);
 			path = Register;
+			sourceTree = "<group>";
+		};
+		768FFF0C25B7A11700B63875 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				768FFF0D25B7A12800B63875 /* EmptyEntity.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		768FFF1525B7A1A900B63875 /* DataProvider */ = {
+			isa = PBXGroup;
+			children = (
+				768FFF1625B7A1D500B63875 /* UserDataProvider.swift */,
+			);
+			path = DataProvider;
+			sourceTree = "<group>";
+		};
+		768FFF1B25B7A2A300B63875 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				768FFF4725B7AB5F00B63875 /* Routes */,
+				768FFF1C25B7A2B300B63875 /* APIClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		768FFF4725B7AB5F00B63875 /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				768FFF4825B7AB7000B63875 /* UserRoute.swift */,
+			);
+			path = Routes;
+			sourceTree = "<group>";
+		};
+		768FFF4D25B7AE3600B63875 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				768FFF4E25B7AE4800B63875 /* ErrorTracker.swift */,
+				768FFF5825B7AEC900B63875 /* ActivityTracker.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -516,15 +586,25 @@
 			files = (
 				767872D925B6306E002FD382 /* LoginInputCell.swift in Sources */,
 				7678735625B66229002FD382 /* RegisterViewController.swift in Sources */,
+				768FFF5925B7AEC900B63875 /* ActivityTracker.swift in Sources */,
+				768FFF0E25B7A12800B63875 /* EmptyEntity.swift in Sources */,
+				768FFF1D25B7A2B300B63875 /* APIClient.swift in Sources */,
 				7678734925B63FEE002FD382 /* UIColor+Extension.swift in Sources */,
 				7613C9F825B62356004017DC /* TextFly.xcdatamodeld in Sources */,
 				7613C9F225B62356004017DC /* SplashViewController.swift in Sources */,
 				7613C9EE25B62356004017DC /* AppDelegate.swift in Sources */,
 				767872F025B63142002FD382 /* InputField.swift in Sources */,
 				767872E725B630D9002FD382 /* BaseViewController.swift in Sources */,
+				768FFF0525B7A09A00B63875 /* RegisterViewModel.swift in Sources */,
+				768FFF1725B7A1D500B63875 /* UserDataProvider.swift in Sources */,
+				768FFF4925B7AB7000B63875 /* UserRoute.swift in Sources */,
 				7613C9F025B62356004017DC /* SceneDelegate.swift in Sources */,
+				768FFF4F25B7AE4800B63875 /* ErrorTracker.swift in Sources */,
 				7678733F25B63F78002FD382 /* Color.swift in Sources */,
+				768FFF5425B7AE8F00B63875 /* ObservableType+Extension.swift in Sources */,
+				768FFF4325B7AABE00B63875 /* DateFormatter+Extension.swift in Sources */,
 				76E7086525B67429003F6F21 /* LoginViewController.swift in Sources */,
+				768FFEFD25B79F9A00B63875 /* UITableView+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

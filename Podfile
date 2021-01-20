@@ -6,10 +6,13 @@ target 'TextFly' do
   use_frameworks!
 
   # Pods for TextFly
+  pod 'Alamofire'
   pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
   pod 'Firebase/Storage'
+  pod 'RxSwift'
+  pod 'RxCocoa'
 
   target 'TextFlyTests' do
     inherit! :search_paths

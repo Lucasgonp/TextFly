@@ -16,6 +16,7 @@ class LoginInputCell: UITableViewCell {
     var textIn: String?
     var titleText: String = ""
     var placeholder: String = ""
+    var sender: String = ""
     var separator: Bool = true
     
     override func layoutSubviews() {

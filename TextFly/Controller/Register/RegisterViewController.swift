@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class RegisterViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -21,6 +22,8 @@ class RegisterViewController: BaseViewController, UITableViewDelegate, UITableVi
     var textInput: String = ""
     var placeholder: String = ""
     
+    var viewModel: RegisterViewModel = RegisterViewModel()
+    
     let inputName = InputField(text: "Nome", placeholder: "Nome")
     let inputLastName = InputField(text: "Sobrenome", placeholder: "Sobrenome")
     let inputPhone = InputField(text: "Telefone", placeholder: "(00) 00000-0000")
@@ -33,6 +36,26 @@ class RegisterViewController: BaseViewController, UITableViewDelegate, UITableVi
         self.initColor()
         self.initTableView()
         self.setViews()
+    }
+    
+    override func bindViewModel() {
+        super.bindViewModel()
+        viewModel.output.isLoading
+            .drive(isLoading)
+            .disposed(by: disposeBag)
+        
+        
+        viewModel.output.onRegisterUser
+            .drive(onNext: { [weak self] user in
+                guard let `self` = self else { return }
+                
+            }).disposed(by: disposeBag)
+        
+        viewModel.output.error
+            .drive(onNext: { [weak self] user in
+                guard let `self` = self else { return }
+                
+            }).disposed(by: disposeBag)
     }
     
     private func initColor() {
@@ -60,6 +83,19 @@ class RegisterViewController: BaseViewController, UITableViewDelegate, UITableVi
         self.inputs = [inputName, inputLastName, inputPhone, inputEmail, inputPassword]
         self.tableView.reloadData()
         tableViewHeight.constant = CGFloat(self.inputs.count * 48)
+    }
+    
+    
+    @IBAction func registerAction(_ sender: Any) {
+        guard let cells = self.tableView.cells as? [LoginInputCell] else { return }
+        var inputs: [String:Any] = [:]
+        for input in cells {
+            if let text = input.inputTextField.text {
+            inputs[input.sender] = text
+            }
+        }
+        
+        self.viewModel.registerUser(inputs: inputs)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
