@@ -21,6 +21,10 @@ class LoginViewController: BaseViewController, UITableViewDelegate, UITableViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if #available(iOS 13.0, *) {
+                // Always adopt a light interface style.
+                overrideUserInterfaceStyle = .light
+            }
         self.initColor()
         self.initTableView()
     }
